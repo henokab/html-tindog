@@ -1,0 +1,48 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: .75rem;
+}
+#profile_img>img{
+  border-radius: 50%;
+  padding-top: 10px;
+  height: 120px;
+}
+.store>img{
+  height:40px;
+  margin-right:100px;
+  padding-top: 5px;
+  margin: 5;
+}
+@media only screen and (max-width: 767px) {
+  #store > img {
+    height: 20px; /* Adjust height for mobile devices */
+    margin-right: 10px; /* Adjust margin for mobile devices */
+    padding-top: 3px; /* Adjust padding for mobile devices */
+    flex-wrap: wrap;
+  }
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
